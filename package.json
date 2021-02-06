@@ -1,0 +1,17 @@
+{
+    "name": "eth-webserver",
+    "version": "1.0.0",
+    "description": "base webserver for elv",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon --exec npm run start",
+        "start": "node .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.7"
+    }
+}
