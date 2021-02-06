@@ -1,6 +1,7 @@
 const express = require("express");
 const https = require("https");
 const fs = require("fs");
+const helmet = require("helmet")
 
 const options = {
     key: fs.readFileSync("key.pem"),
@@ -8,6 +9,10 @@ const options = {
 };
 
 const app = express();
+
+app.use(helmet.hsts({
+    maxAge: 15552000,
+}))
 
 app.use(express.static('public'));
 
