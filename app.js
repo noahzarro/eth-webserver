@@ -14,7 +14,7 @@ app.use(helmet.hsts({
     maxAge: 15552000,
 }))
 
-app.use(express.static('public'));
+app.use(express.static('public/elv-web-data'));
 
 app.listen(8080);
 
